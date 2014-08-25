@@ -10,7 +10,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 group :development, :test do 
-	gem 'sqlite3'
+	gem 'sqlite3', '1.3.9'
 	gem 'rspec-rails', '2.9.0'
 
 end
