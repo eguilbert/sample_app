@@ -36,8 +36,13 @@ group :test do
 	gem 'guard-spork', '0.3.2'
   	gem 'spork', '0.9.0'
 end
-group :production do gem 'pg', '0.12.2'
+group :production do 
+	gem 'pg', '0.12.2'
 end
+group :production, :staging do
+       gem 'rails_12factor'
+     
+    end
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
